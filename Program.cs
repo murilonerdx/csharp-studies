@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace ConsoleApp1
 {
@@ -18,6 +19,14 @@ namespace ConsoleApp1
             object obj1 = "Murilo Pereira";
             object obj2 = 4.5f;
             string nome2 = "Murilo Pereira da Silva";
+            double saldo = 10.36724;
+
+            // Exemplo 
+            // int _5minutos; int salario; int salarioDoFuncionario;
+            // Converções
+            //Camel Case: lastname (parametros de metodos, variaveis dentro de metodos)
+            //PascalCase: LastName (namespaces, classe, properties e metodos)
+            //Pad~rao_lasName (atributos internos da classe)
            
 
 
@@ -33,7 +42,24 @@ namespace ConsoleApp1
             Console.WriteLine(obj1);
             Console.WriteLine(obj2);
             Console.WriteLine(nome2);
-         
+
+            //F2 vai delimitar a quantidade de caracters depois da virgula eu quero imprimir
+            Console.WriteLine(saldo.ToString("F2"));
+
+            //Definir formatação do numero
+            Console.WriteLine(saldo.ToString("F2", CultureInfo.InvariantCulture));
+
+
+            //Imprimir em um console
+            int idade = 20;
+            Console.WriteLine("{0} tem {1} anos e tem saldo igual a {2:F2} reais", nome, idade, saldo);
+
+            Console.WriteLine($"{nome} tem {idade} anos e tem saldo igual a {saldo:F2} reais");
+
+
+
+
+
         }
     }
 }
