@@ -57,6 +57,24 @@ namespace ConsoleApp1
             Console.WriteLine($"{nome} tem {idade} anos e tem saldo igual a {saldo:F2} reais");
 
 
+            //Entrada de dados
+            string frase = Console.ReadLine();
+            Console.WriteLine("Você digitou: " + frase);
+
+            string[] vet = Console.ReadLine().Split(' ');
+
+            for (int a =0; a < vet.Length; a++)
+            {
+                Console.WriteLine(vet[a]);
+            }
+
+            int n12 = int.Parse(Console.ReadLine());
+            char ch = char.Parse(Console.ReadLine());
+
+            Console.WriteLine("INT PARSE " + n12 + " CHAR PARSE " + ch);
+
+
+
 
 
 
