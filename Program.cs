@@ -74,10 +74,26 @@ namespace ConsoleApp1
             Console.WriteLine("INT PARSE " + n12 + " CHAR PARSE " + ch);
 
 
+            Console.WriteLine("Entre com um número inteiro");
+            int x = int.Parse(Console.ReadLine());
+            Par(x);
 
 
 
 
+
+
+        }
+
+        static void Par(int x) {
+            if (x % 2 == 0)
+            {
+                Console.WriteLine("Par");
+            }
+            else
+            {
+                Console.WriteLine("Impar");
+            }
         }
     }
 }
