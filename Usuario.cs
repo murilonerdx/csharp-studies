@@ -6,22 +6,22 @@ namespace ConsoleApp1
 {
     class Usuario
     {
-        public string Email;
-        public string Senha;
+        private string _email { get; set; }
+    private string _senha { get; set; }
 
         public Usuario(string email, string senha) {
-            Email = email;
-            Senha = Senha;
+            _email = email;
+            _senha = senha;
         }
 
         public Usuario() { }
 
         public Usuario(string email) {
-            Email = email;
+            _email = email;
         }
 
         public override string ToString() {
-            return Email + ", " + Senha;
+            return _email + ", " + _senha;
         }
     }
 }
