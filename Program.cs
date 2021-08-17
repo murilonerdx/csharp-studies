@@ -79,9 +79,21 @@ namespace ConsoleApp1
             Par(x);
 
 
+            Triangulo z, c;
 
+            z = new Triangulo();
 
+            z.A = double.Parse(Console.ReadLine());
+            z.B = double.Parse(Console.ReadLine());
+            z.C = double.Parse(Console.ReadLine());
 
+            Usuario usuario = new Usuario();
+
+            Console.WriteLine("Entre com o email do usuario");
+            usuario.Email = Console.ReadLine();
+
+            Console.WriteLine("Entre com a senha do usuario " + usuario.Email);
+            usuario.Senha = Console.ReadLine();
 
         }
 
