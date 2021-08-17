@@ -8,5 +8,9 @@ namespace ConsoleApp1
     {
         public string Email;
         public string Senha;
+
+        public override string ToString() {
+            return Email + ", " + Senha;
+        }
     }
 }
