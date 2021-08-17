@@ -16,6 +16,10 @@ namespace ConsoleApp1
 
         public Usuario() { }
 
+        public Usuario(string email) {
+            Email = email;
+        }
+
         public override string ToString() {
             return Email + ", " + Senha;
         }

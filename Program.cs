@@ -97,7 +97,15 @@ namespace ConsoleApp1
             string senha = Console.ReadLine(); 
 
 
-            Usuario usuario = new Usuario();
+            Usuario usuario = new Usuario(email, senha);
+
+            Console.WriteLine(usuario);
+
+            usuario = new Usuario
+            {
+                Email = "mu-silva@outlook.com",
+                Senha = "1234"
+            };
 
 
         }
